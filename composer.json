@@ -1,0 +1,36 @@
+{
+  "name": "apiftw/skeleton",
+  "description": "The skeleton for new packages.",
+  "keywords": [],
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/apiftw/skeleton/",
+  "authors": [
+    {
+      "name": "Veaceslav Medvedev",
+      "email": "slavcopost@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Apiftw\\": ["./src"],
+      "Acme\\": ["./src"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Apiftw\\": ["./tests"],
+      "Acme\\": ["./tests"]
+    }
+  },
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "@stable"
+  },
+  "suggest": {},
+  "scripts": {
+    "test": "phpunit"
+  }
+}
